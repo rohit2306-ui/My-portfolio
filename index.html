@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <button class="rot" id="menu-but"><i class="fa-solid fa-bars"></i></button>
+    <p>Portfolio</p>
+  </nav>
+  <div class="menu">
+   <div class="menu-opt">
+    <a href="#">Home</a>
+    <a href="#">Experience</a>
+    <a href="#">Projects</a>
+    <a href="#">Achivement's</a>
+   </div>
+  </div>
+  <div class="main-cont">
+    <div class="intro-cont">
+      <p>{</p>
+        <div class="intro-word">
+          <div id="autoTyper"></div>
+        </div>
+      <p>}</p>
+    </div>
+    <div class="social-links">
+      <a style="color: red;" href=""><i class="fa-brands fa-youtube"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <a style="color: rgb(0, 157, 255);" href><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><img src="leetcode.png" alt=""></a>
+    </div>
+    <div class="my-skills">
+      <p>Skill's</p>
+        <div class="webdev">
+          
+        </div>
+        <div class="webdev"></div>
+        <div class="webdev"></div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  let but = document.querySelector('#menu-but')
+  let menu = document.querySelector('.menu')
+  let rotate = document.querySelector('.rot')
+  const a = 0;
+  but.onclick = ()=>{
+    menu.classList.toggle('active')
+  }
+
+
+  const autoTyper = document.getElementById('autoTyper');
+const strings = ["Welcome to my Portfolio", "My Name is Rohit Thakur", "A proficient Software developer" , "with master techniques of coading"];
+let currentString = 0;
+let currentChar = 0;
+let direction = 1;
+
+function type() {
+    if (direction === 1 && currentChar === strings[currentString].length) {
+        direction = -1;
+        setTimeout(type, 1000);
+        return;
+    }
+
+    if (direction === -1 && currentChar === -1) {
+        currentString = (currentString + 1) % strings.length;
+        direction = 1;
+        setTimeout(type, 500);
+        return;
+    }
+
+    autoTyper.textContent = strings[currentString].substr(0, currentChar + (direction === 1 ? 1 : 0));
+    currentChar += direction;
+    setTimeout(type, 100);
+}
+
+type();
+
+
+// revel
+// ScrollReveal().reveal('.webdev', { scale: 0.85 , reset:true});
+ScrollReveal({ distance: '80px' });
+ScrollReveal().reveal('.web-img1', { origin: 'left' ,delay:150 ,reset:true});
+ScrollReveal().reveal('.about-skill1', { origin: 'top' ,delay:200 ,reset:true});
+
+</script>
