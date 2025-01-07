@@ -131,25 +131,22 @@ body{
             font-size: 30px;
         }
         .webdev{
-            height: 400px;
-            width: 100%;
-            background-color: wheat;
+            height: auto;
+            width: 70%;
+            margin-left: 25%;
+            /* background-color: wheat; */
             /* display: flex; */
             flex-direction: row;
             margin-top: 100px;
-            .web-img1{
-                width: 350px;
-                height: 260px;
-                margin: 20px 20px;
-                /* border-radius: 20px; */
-                background-color: red;
-                /* border: 1px solid white; */
+            img{
+                height: 200px;
+                margin-left: 150px;
+                border-radius: 20px;
+                border: 1px solid grey;
+                margin: 10px 10px;
             }
             .about-skill1{
-                height: 90%;
-                width: 90%;
-                background-color: rgba(27, 27, 27, 0.916);
-                border-radius: 20px;
+                color: white;
             }
         }
     }
@@ -160,6 +157,7 @@ body{
         height: 50px;
         width: 100%;
         background-color: rgba(27, 27, 27, 0.916);
+        backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -245,15 +243,17 @@ body{
                 font-size: 30px;
             }
             .webdev{
-                height: 400px;
+                height: auto;
                 width: 100%;
-                background-color: wheat;
+                /* background-color: wheat; */
                 /* display: flex; */
                 flex-direction: row;
                 margin-top: 50px;
+                margin-left: 10%;
                 .web-img1{
-                    width: 350px;
-                    height: 260px;
+                    width: 200px;
+                    height: auto;
+
                     margin: 20px 20px;
                     /* border-radius: 20px; */
                     background-color: red;
@@ -262,8 +262,13 @@ body{
                 .about-skill1{
                     height: 90%;
                     width: 90%;
-                    background-color: rgba(27, 27, 27, 0.916);
+                    /* background-color: rgba(27, 27, 27, 0.916); */
                     border-radius: 20px;
+                    .container{
+                        p{
+                            font-size: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -301,5 +306,93 @@ body{
         margin-left: 0px;
         margin-top: 50px;
         width: 150px;
+    }
+    .webdev{
+        height: auto;
+        width: 70%;
+        margin-left: 25%;
+        /* background-color: wheat; */
+        /* display: flex; */
+        flex-direction: row;
+        margin-top: 100px;
+        margin-left: 0%;
+        img{
+            height: 200px;
+            /* margin-left: 150px; */
+            border-radius: 20px;
+            /* border: 1px solid grey; */
+            margin: 10px 10px;
+        }
+        .about-skill2{
+            height: auto;
+            width: auto;
+    
+        }
+    }
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+    /* background: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: grey;
+    margin-bottom: 0.5rem;
+    font-size: small;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: black;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+ul li strong {
+    color: wheat;
+}
+.webdev{
+    height: auto;
+    width: 70%;
+    margin-left: 25%;
+    /* background-color: wheat; */
+    /* display: flex; */
+    flex-direction: row;
+    margin-top: 100px;
+    img{
+        height: 200px;
+        margin-left: 150px;
+        border-radius: 20px;
+        /* border: 1px solid grey; */
+        margin: 10px 10px;
+    }
+    .about-skill2{
+        height: auto;
+        width: auto;
+
     }
 }
