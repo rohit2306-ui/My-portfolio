@@ -181,9 +181,9 @@ body{
         }
         p{
             color: white;
-            /* transform: rotate(-90deg); */
+            transform: rotate(90deg);
             font-size: 20px;
-            /* margin-top: 150%; */
+            margin-top: 0%;
             
         }
     }
@@ -238,8 +238,8 @@ body{
         }
         .my-skills{
             
-            padding: 30px 30px;
-            margin: 45px 45px;
+            padding: 15px 15px;
+            margin: 10px 10px;
             /* background-color: red; */
             p{
                 font-size: 30px;
@@ -250,7 +250,7 @@ body{
                 background-color: wheat;
                 /* display: flex; */
                 flex-direction: row;
-                margin-top: 100px;
+                margin-top: 50px;
                 .web-img1{
                     width: 350px;
                     height: 260px;
