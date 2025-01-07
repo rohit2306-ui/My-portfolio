@@ -153,3 +153,152 @@ body{
         }
     }
 }
+
+@media (max-width:500px) {
+    .navbar{
+        height: 50px;
+        width: 100%;
+        background-color: rgba(27, 27, 27, 0.916);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        #menu-but{
+            height: 65px;
+            width: 35px;
+            border-radius: 50%;
+            margin:15px 20px;
+            color: white;
+            background-color: rgba(27, 27, 27, 0.849);
+            border: none;
+            font-size: 12px;
+            cursor: pointer;
+            &:hover{
+                transition: 0.2s;
+                /* background-color: rgba(203, 194, 194, 0.584); */
+                color: black;
+            }
+        }
+        p{
+            color: white;
+            /* transform: rotate(-90deg); */
+            font-size: 50px;
+            /* margin-top: 150%; */
+            
+        }
+    }
+    .main-cont{
+        height: 1100px;
+        width: auto;
+        color: white;
+        /* background-color: red; */
+        margin-left: 0px;
+        padding-top: 100px;
+        /* flex-wrap: wrap; */
+        .intro-cont{
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            .intro-word{
+                display: flex;
+                /* flex-wrap: wrap; */
+                width: 200px;
+                height: 150px;
+                padding: 30px 40px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-size: 80px;
+                color: rgba(245, 73, 73, 0.42);
+            }
+        }
+        .social-links{
+            height: auto;
+            width: auto;
+            background-color: rgba(27, 27, 27, 0.916);
+            margin: 50px 50px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 20px;
+            a{
+                color: white;
+                /* margin: auto; */
+                margin-left: 25px;
+            }
+            i{
+                font-size: 27px;
+                padding: 10px 10px;
+            }
+            img{
+                padding: 10px 10px;
+                height: 27px;
+                border-radius: 20px;
+            }
+        }
+        .my-skills{
+            
+            padding: 30px 30px;
+            margin: 45px 45px;
+            /* background-color: red; */
+            p{
+                font-size: 30px;
+            }
+            .webdev{
+                height: 400px;
+                width: 100%;
+                background-color: wheat;
+                /* display: flex; */
+                flex-direction: row;
+                margin-top: 100px;
+                .web-img1{
+                    width: 350px;
+                    height: 260px;
+                    margin: 20px 20px;
+                    /* border-radius: 20px; */
+                    background-color: red;
+                    /* border: 1px solid white; */
+                }
+                .about-skill1{
+                    height: 90%;
+                    width: 90%;
+                    background-color: rgba(27, 27, 27, 0.916);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .menu{
+        height: 100%;
+        width: 0px;
+        /* margin-left: 110px; */
+        display: flex;
+        position: fixed;
+        background-color: rgb(22, 22, 22); 
+        overflow: hidden;   
+        flex-direction: column;
+        .menu-opt{
+            margin-top: 50px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            a{
+                color: rgb(111, 106, 106);
+                text-decoration: none;
+                font-size: 12px;
+                margin-top: 30px;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+    .menu.active{
+        transition: 0.5s;
+        width: 245px;
+        display: flex;
+        position: fixed;
+        margin-left: 0px;
+        margin-top: 50px;
+        width: 150px;
+    }
+}
