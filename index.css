@@ -75,9 +75,10 @@ body{
     color: white;
 }
 .main-cont{
-    height: 1100px;
+    height: 6000px;
     width: auto;
     color: white;
+    overflow: hidden;
     /* background-color: red; */
     margin-left: 110px;
     /* flex-wrap: wrap; */
@@ -440,6 +441,7 @@ ul li strong {
 }
 @media (max-width:600px) {
     .my_specilization{
+        overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         height: auto;
