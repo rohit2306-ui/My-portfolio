@@ -458,8 +458,8 @@ ul li strong {
             border-radius: 20px;
             flex-wrap: wrap;
             .type-s{
-                height: 100px;
-                width: 150px;
+                height: 200px;
+                width: 300px;
                 border-radius: 20px;
                 backdrop-filter: blur(20px);
                 border: 1px solid white;
@@ -467,6 +467,9 @@ ul li strong {
                 background-color: rgba(255, 255, 255, 0.091);
                 i{
                     font-size: 30px;
+                }
+                &:hover{
+                    background-color: rgba(0, 128, 0, 0.434);
                 }
             }
         }
