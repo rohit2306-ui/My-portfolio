@@ -132,18 +132,19 @@ body{
         }
         .webdev{
             height: auto;
-            width: 70%;
-            margin-left: 25%;
-            /* background-color: wheat; */
+            width: 80%;
+            margin-left: 10%;
+            background-color: wheat;
+            border-radius: 20px;
             /* display: flex; */
             flex-direction: row;
             margin-top: 100px;
             img{
                 height: 200px;
-                margin-left: 150px;
+                margin-left: 10%;
                 border-radius: 20px;
                 border: 1px solid grey;
-                margin: 10px 10px;
+                margin: 10px 150px;
             }
             .about-skill1{
                 color: white;
@@ -186,7 +187,7 @@ body{
         }
     }
     .main-cont{
-        height: 1100px;
+        height: auto;
         width: auto;
         color: white;
         /* background-color: red; */
@@ -244,12 +245,12 @@ body{
             }
             .webdev{
                 height: auto;
-                width: 100%;
+                width: auto;
                 /* background-color: wheat; */
                 /* display: flex; */
                 flex-direction: row;
                 margin-top: 50px;
-                margin-left: 10%;
+                margin-left: 6%;
                 .web-img1{
                     width: 200px;
                     height: auto;
@@ -309,19 +310,19 @@ body{
     }
     .webdev{
         height: auto;
-        width: 70%;
-        margin-left: 25%;
+        width: auto;
+        margin-left: 10%;
         /* background-color: wheat; */
         /* display: flex; */
         flex-direction: row;
         margin-top: 100px;
         margin-left: 0%;
-        img{
-            height: 200px;
+        .img-2{
+            height: 150px;
             /* margin-left: 150px; */
             border-radius: 20px;
             /* border: 1px solid grey; */
-            margin: 10px 10px;
+            margin: 10px 50px;
         }
         .about-skill2{
             height: auto;
@@ -345,8 +346,9 @@ body{
     overflow: hidden;
     padding: 2rem;
     /* background: #fff; */
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(37, 35, 35, 0.578);
 }
 
 h1, h2, h3 {
@@ -378,21 +380,90 @@ ul li strong {
 .webdev{
     height: auto;
     width: 70%;
-    margin-left: 25%;
-    /* background-color: wheat; */
+    margin-left: 10%;
+    background-color: wheat;
+    padding: 40px 10px;
     /* display: flex; */
     flex-direction: row;
     margin-top: 100px;
+    border-radius: 20px;
     img{
         height: 200px;
         margin-left: 150px;
         border-radius: 20px;
         /* border: 1px solid grey; */
-        margin: 10px 10px;
+        margin: 10px 180px;
     }
     .about-skill2{
         height: auto;
         width: auto;
 
+    }
+}
+.my_specilization{
+    height: auto;
+    width: auto;
+    margin: 50px 50px;
+    background-color: transparent;
+    margin-left: 100px;
+    border-radius: 20px;
+    .speci{
+        background-image: url(second-cont.png);
+        height: auto;
+        width: auto;
+        display: flex;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        .type-s{
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            border: 1px solid white;
+            margin: 10px 13px;
+            background-color: rgba(255, 255, 255, 0.091);
+            i{
+                font-size: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            h3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media (max-width:600px) {
+    .my_specilization{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+        margin: 20px 50px;
+        background-color: transparent;
+        margin-left: 50px;
+        border-radius: 20px;
+        .speci{
+            background-image: url(second-cont.png);
+            height: auto;
+            width: auto;
+            display: flex;
+            border-radius: 20px;
+            flex-wrap: wrap;
+            .type-s{
+                height: 200px;
+                width: 300px;
+                border-radius: 20px;
+                backdrop-filter: blur(20px);
+                border: 1px solid white;
+                margin: 10px 40px;
+                background-color: rgba(255, 255, 255, 0.091);
+            }
+        }
     }
 }
