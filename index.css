@@ -75,7 +75,7 @@ body{
     color: white;
 }
 .main-cont{
-    height: 6000px;
+    height: auto;
     width: auto;
     color: white;
     overflow: hidden;
@@ -87,8 +87,9 @@ body{
         flex-direction: row;
         margin-left: 100px;
         img{
-            height: 400px;
-            margin: 0px 60px;
+            height: 300px;
+            margin: 50px 60px;
+            border-radius: 20px;
         }
         .intro-word{
             display: flex;
@@ -119,7 +120,7 @@ body{
             margin-left: 50px;
         }
         i{
-            font-size: 47px;
+            font-size: 37px;
             padding: 10px 10px;
         }
         img{
@@ -146,7 +147,7 @@ body{
     /* background-image: url(mytechjourney.png); */
     .webdev{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         img{
             height: 400px;
             margin-top: 50px;
@@ -172,7 +173,7 @@ body{
     }
     .cpp{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         img{
             height: 400px;
             margin-top: 60px;
@@ -198,26 +199,69 @@ body{
     }
 }
 .events{
-    height: auto;
+    /* height: auto; */
     /* width: auto; */
     object-fit: contain;
-    height: 400px;
+    height: 600px;
     border: 1px solid white;
     border-radius: 20px;
     margin: 20px 20px;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-y: scroll;
     scrollbar-width: red;
     img{
         
         width: auto;
-        margin: 10px 10px;
+        margin: 30px 30px;
     }
+}
+.contactme{
+    height: auto;
+    background-color: rgb(11, 29, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 20px 20px;
+    background-image: url(mytechjourney.png);
+    backdrop-filter: blur(20px);
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            height: 35px;
+            width: 400px;
+            border-radius: 20px;
+            padding-left: 20px;
+            margin: 20px 20px;
+            border: none;
+        }
+        textarea{
+            height: 300px;
+            width: 370px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            padding: 20px 20px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            margin-left: 40%;
+            margin-bottom: 100px;
+            border-radius: 10px;
+            border: 2px solid red;
+        }
+    }
+
+
 }
 }
 
 @media (max-width:500px) {
+    
     .navbar{
         height: 50px;
         width: 100%;
@@ -258,13 +302,74 @@ body{
         margin-left: 0px;
         padding-top: 70px;
         /* flex-wrap: wrap; */
+        .myjourney{
+            width: 95%;
+            height: auto;
+            /* margin: 0px 30px; */
+            background-size: cover;
+            /* background-image: url(mytechjourney.png); */
+            .webdev{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    height: 400px;
+                    margin-top: 50px;
+                }
+                .about-it{
+                    height: 370px;
+                    margin-top: 50px;
+                    padding: 50px 50px;
+                    p{
+                        color: white;
+                        font-size: 17px;
+                    }
+                    button{
+                        height: 38px;
+                        width: 150px;
+                        margin: 30px 30px;
+                        border-radius: 10px;
+                        border: 2px solid red;
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+            .cpp{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    height: 400px;
+                    margin-top: 60px;
+                }
+                .about-it{
+                    height: 370px;
+                    margin-top: 50px;
+                    padding: 50px 50px;
+                    p{
+                        color: white;
+                        font-size: 17px;
+                    }
+                    button{
+                        height: 38px;
+                        width: 150px;
+                        margin: 30px 30px;
+                        border-radius: 10px;
+                        border: 2px solid red;
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
         .intro-cont{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             margin-left: 25px;
             img{
-            height: 200px;
+            width: 170px;
+            object-fit: cover;
             margin: 0px 60px;
+
             }
             .intro-word{
                 display: flex;
@@ -272,12 +377,12 @@ body{
                 width: 200px;
                 height: 100px;
                 padding: 30px 40px;
-                font-size: 20px;
+                font-size: 23px;
                 font-family: Arial, Helvetica, sans-serif;
             }
             p{
-                font-size: 80px;
-                color: rgba(245, 73, 73, 0.42);
+                font-size: 10px;
+                color: transparent;
             }
         }
         .social-links{
@@ -294,12 +399,12 @@ body{
                 margin-left: 25px;
             }
             i{
-                font-size: 27px;
+                font-size: 47px;
                 padding: 10px 10px;
             }
             img{
                 padding: 10px 10px;
-                height: 27px;
+                height: 37px;
                 border-radius: 20px;
             }
         }
@@ -341,6 +446,24 @@ body{
                 }
             }
         }
+        .events{
+            height: auto;
+            /* width: auto; */
+            object-fit: contain;
+            height: 600px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            align-items: center;
+            img{
+                
+                width: 300px;
+                margin: 10px 10px;
+            }
     }
     .menu{
         height: 100%;
@@ -377,7 +500,7 @@ body{
         width: 150px;
     }
     
-}
+}}
 
 /* body {
     font-family: Arial, sans-serif;
@@ -491,7 +614,7 @@ ul li strong {
                 /* margin: 10px 40px; */
                 background-color: rgba(255, 255, 255, 0.091);
                 i{
-                    font-size: 30px;
+                    font-size: 60px;
                 }
                 &:hover{
                     background-color: rgba(0, 128, 0, 0.434);
