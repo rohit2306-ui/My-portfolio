@@ -86,17 +86,21 @@ body{
         display: flex;
         flex-direction: row;
         margin-left: 100px;
+        img{
+            height: 400px;
+            margin: 0px 60px;
+        }
         .intro-word{
             display: flex;
             /* flex-wrap: wrap; */
             width: 400px;
             height: 200px;
             padding: 70px 100px;
-            font-size: 50px;
+            font-size: 40px;
             font-family: Arial, Helvetica, sans-serif;
         }
         p{
-            font-size: 200px;
+            font-size: 150px;
             color: rgba(245, 73, 73, 0.42);
         }
     }
@@ -108,6 +112,7 @@ body{
         display: flex;
         flex-direction: row;
         border-radius: 20px;
+        border: 1px solid white;
         a{
             color: white;
             /* margin: auto; */
@@ -131,27 +136,85 @@ body{
         p{
             font-size: 30px;
         }
-        .webdev{
-            height: auto;
-            width: 80%;
-            margin-left: 10%;
-            background-color: wheat;
-            border-radius: 20px;
-            /* display: flex; */
-            flex-direction: row;
-            margin-top: 100px;
-            img{
-                height: 200px;
-                margin-left: 10%;
-                border-radius: 20px;
-                border: 1px solid grey;
-                margin: 10px 150px;
+       
+}
+.myjourney{
+    width: 95%;
+    height: auto;
+    /* margin: 0px 30px; */
+    background-size: cover;
+    /* background-image: url(mytechjourney.png); */
+    .webdev{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            height: 400px;
+            margin-top: 50px;
+        }
+        .about-it{
+            height: 370px;
+            margin-top: 50px;
+            padding: 50px 50px;
+            p{
+                color: white;
+                font-size: 17px;
             }
-            .about-skill1{
+            button{
+                height: 38px;
+                width: 150px;
+                margin: 30px 30px;
+                border-radius: 10px;
+                border: 2px solid red;
+                background-color: black;
                 color: white;
             }
         }
     }
+    .cpp{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            height: 400px;
+            margin-top: 0px;
+        }
+        .about-it{
+            height: 370px;
+            margin-top: 50px;
+            padding: 50px 50px;
+            p{
+                color: white;
+                font-size: 17px;
+            }
+            button{
+                height: 38px;
+                width: 150px;
+                margin: 30px 30px;
+                border-radius: 10px;
+                border: 2px solid red;
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+.events{
+    height: auto;
+    /* width: auto; */
+    object-fit: contain;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: red;
+    img{
+        
+        width: auto;
+        margin: 10px 10px;
+    }
+}
 }
 
 @media (max-width:500px) {
@@ -309,28 +372,7 @@ body{
         margin-top: 50px;
         width: 150px;
     }
-    .webdev{
-        height: auto;
-        width: auto;
-        margin-left: 10%;
-        /* background-color: wheat; */
-        /* display: flex; */
-        flex-direction: row;
-        margin-top: 100px;
-        margin-left: 0%;
-        .img-2{
-            height: 150px;
-            /* margin-left: 150px; */
-            border-radius: 20px;
-            /* border: 1px solid grey; */
-            margin: 10px 50px;
-        }
-        .about-skill2{
-            height: auto;
-            width: auto;
     
-        }
-    }
 }
 
 /* body {
@@ -378,29 +420,7 @@ ul li {
 ul li strong {
     color: wheat;
 }
-.webdev{
-    height: auto;
-    width: 70%;
-    margin-left: 10%;
-    background-color: wheat;
-    padding: 40px 10px;
-    /* display: flex; */
-    flex-direction: row;
-    margin-top: 100px;
-    border-radius: 20px;
-    img{
-        height: 200px;
-        margin-left: 150px;
-        border-radius: 20px;
-        /* border: 1px solid grey; */
-        margin: 10px 180px;
-    }
-    .about-skill2{
-        height: auto;
-        width: auto;
 
-    }
-}
 .my_specilization{
     height: auto;
     width: auto;
@@ -416,6 +436,7 @@ ul li strong {
         border-radius: 20px;
         flex-wrap: wrap;
         .type-s{
+            position: sticky;
             height: 200px;
             width: 300px;
             border-radius: 20px;
