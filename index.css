@@ -39,7 +39,8 @@ body {
 .menu {
   height: 100%;
   width: 0px;
-  margin-left: 110px;
+  margin-left: 100px;
+  margin-top: 0px;
   display: flex;
   position: fixed;
   background-color: rgb(22, 22, 22);
@@ -63,9 +64,8 @@ body {
 }
 .menu.active {
   transition: 0.5s;
-  width: 245px;
-  display: flex;
-  position: fixed;
+  width: 100%;
+  position: absolute;
 }
 .rot.active {
   transition: 0.3s;
@@ -303,9 +303,11 @@ body {
       .webdev {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         img {
           height: 400px;
-          margin-top: 50px;
+          /* margin-top: 50px; */
         }
         .about-it {
           height: 370px;
@@ -331,7 +333,7 @@ body {
         flex-wrap: wrap;
         img {
           height: 400px;
-          margin-top: 60px;
+          margin-top: 100px;
         }
         .about-it {
           height: 370px;
@@ -479,15 +481,15 @@ body {
         }
       }
     }
-    .menu.active {
+    /* .menu.active {
       transition: 0.5s;
-      width: 245px;
+      width: 220px;
       display: flex;
       position: fixed;
-      margin-left: 0px;
+      margin-left: 10px;
       margin-top: 50px;
       width: 150px;
-    }
+    } */
     .contactme {
         height: auto;
         background-color: rgb(11, 29, 11);
